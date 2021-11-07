@@ -1,4 +1,8 @@
 package ie.wit.assignment1.models
 
-interface HS {
+interface HikeStore {
+    fun findAll(): List<HikeModel>
+    fun create(hike: HikeModel)
+    fun update(hike: HikeModel)
+    fun delete(hike: HikeModel)
 }

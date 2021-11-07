@@ -1,4 +1,4 @@
-package ie.wit.assignment1.hikes.activities
+package ie.wit.assignment1.activities
 
 import android.app.Activity
 import android.content.Intent
@@ -50,6 +50,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback,  GoogleMap.OnMarker
         finish()
         super.onBackPressed()
     }
+
 
     override fun onMarkerClick(marker: Marker): Boolean {
         val loc = LatLng(location.lat, location.lng)
